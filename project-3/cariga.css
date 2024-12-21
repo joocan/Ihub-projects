@@ -1,0 +1,26 @@
+*{
+}
+
+header {
+    background-color: hsl(180, 51%, 14%);;
+    color: white;
+    margin: 10px;
+    padding: 200px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 200;
+}
+nav a {
+    color: white;
+    padding:30px;
+    font-size:large;
+    margin: 15px;
+    text-decoration:none;
+    
+}
+.About-Me, .Skills, .Education, .Experience, .Projects, .Articles-I-Wrote, {
+    margin: 700px auto;
+    background-color:powderblue;
+    width: 190%;
+    text-align: center;
+}

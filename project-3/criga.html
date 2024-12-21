@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+        /* Reset some default styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align content from the top */
+            background-color: #f4f4f4;
+        }
+
+        main {
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px; /* Ensure content starts with some space */
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, select, button {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+          color: #f4f4f4;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Student Enrollment Form</h1>
+        <form>
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone" required>
+
+            <label for="gender">Select Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="course">Select Course:</label>      
+            <select id="course" name="course" required>
+                <option value="html & css">HTML & CSS</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+
+            <button type="submit" class="animated-button">Save</button>
+        </form>
+        <h2>Registered Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ahmed Mohamed</td>
+                    <td>20</td>
+                    <td>iamahmed@gmail.com</td>
+                    <td>+25290*****</td>
+                    <td>Male</td>
+                    <td>HTML & CSS</td>
+                </tr>
+                <tr>
+                    <td>Aisha Farah</td>
+                    <td>22</td>
+                    <td>iamaisha@gmail.com</td>
+                    <td>25290*****</td>
+                    <td>Female</td>
+                    <td>Python</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
