@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Enrollment - HTML Learning Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #e6f2ff;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    /* Main Content Styles */
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #4CAF50;
+      font-size: 24px;
+      margin-top: 30px;
+    }
+
+    /* Enrollment Form Styles */
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    label, input, select, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    input, select, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Enrollment - HTML Learning Project</h1>
+  </header>
+
+  <main>
+    <h2>Enroll in the Course</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course">
+        <option value="html-basics">HTML Basics</option>
+        <option value="css-fundamentals">CSS Fundamentals</option>
+        <option value="javascript-essentials">JavaScript Essentials</option>
+      </select>
+
+      <label for="additional-info">Additional Information:</label>
+      <textarea id="additional-info" name="additional-info"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 citycolihub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
