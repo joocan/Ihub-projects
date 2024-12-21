@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+ <div class="card">
+ <div class="card-header">
+ <h3>blood request form</h3>
+</div>
+<div class="card-body">
+<form>
+<div class="row g-3 mb-4">
+                <!-- col 1 -->
+ <div class="col-md-4">
+ <label for="Full Name">Full Name</label>
+ <div class="input-group">
+ <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+ <input type="text" class="form-control" placeholder="enter full name">
+ </div>
+ </div>
+
+                <!-- col 2  -->
+
+<div class="col-md-4">
+<label for="email">email</label>
+<div class="input-group">
+<span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+<input type="email" class="form-control" placeholder="enter email">
+</div>
+</div>
+
+                <!--col 3  -->
+<div class="col-md-4">
+<label for="contact number">phone number</label>
+<div class="input-group">
+<span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+<input type="number" class="form-control" placeholder="enter phone number">
+</div>
+</div>
+
+<!--col 4  -->
+
+<div class="col-md-4">
+<label for="region">region</label>
+<div class="input-group">
+<span class="input-group-text"><i class="fa-solid fa-location-dot"></i></span>
+<input type="text" class="form-control" placeholder="enter region">
+</div>
+</div>
+
+<!--col 5  -->
+
+<div class="col-md-4">
+<label for="town">town</label>
+<div class="input-group">
+<span class="input-group-text"><i class="fa-solid fa-city"></i></span>
+<input type="text" class="form-control" placeholder="enter town">
+</div>
+</div>
+
+<!--col 6  -->
+
+<div class="col-md-4">
+<label for="village">village</label>
+<div class="input-group">
+<span class="input-group-text"><i class="fa-solid fa-city"></i></span>
+<input type="text" class="form-control" placeholder="enter village">
+</div>
+</div>
+
+<!--col 7  -->
+
+<div class="col-md-4">
+<label for="blood type">blood type</label>
+<div class="input-group">
+<span class="input-group-text"><i class="fa-solid fa-droplet"></i></span>
+<select id="blood type" class="form-select">
+<option>A+</option>
+<option>B+</option>
+<option>C+</option>
+<option>AB</option>
+</select>
+</div>
+</div>
+
+
+         <!--buttons  -->
+
+<div class="row g-3 mb-4">
+<div class="col-md-3">
+<button type="submit" class="btn btn-success w-100">Requuest <i class="fas fa-save"></i></button>
+</div>
+<div class="col-md-3">
+<button type="submit" class="btn btn-danger w-100">Reset <i class="fas fa-trash"></i></button>
+</div>
+<div class="col-md-3">
+<button type="button" class="btn btn-warning w-100"> Update<i class="fas fa-pen"></i></button>
+</div>
+<div class="col-md-3">
+<button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+</div>
+</div>
+</form>
+
+
+<!-- card 2 -->
+<div class="card">
+  <div class="card-header"> 
+<h3>list of blood Request</h3>
+  </div>
+     <div class="card-body">
+
+
+        <table class="table table-striped ">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">name </th>
+                <th scope="col">email</th>
+                <th scope="col">phone</th>
+                <th scope="col">region</th>
+                <th scope="col">town</th>
+                <th scope="col">village</th>
+                <th scope="col">blood type</th>
+                <th scope="col">status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>xassan</td>
+                <td>xassan@gmail.com</td>
+                <td>090-252-989</td>
+                <td>sanaag</td>
+                <td>laasqoray</td>
+                <td>suuqa caanaha</td>
+                <td>A+</td>
+                <td>accepted</td>
+              </tr>
+
+
+              <tr>
+                <th scope="row">2</th>
+                <td>muudeey</td>
+                <td>muudeey@gmail.com</td>
+                <td>090-252-989</td>
+                <td>mudug</td>
+                <td>qaloocan</td>
+                <td>lafweynta</td>
+                <td>Ab+</td>
+                <td>rejected</td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td>abdi</td>
+                <td>abdi@gmail.com</td>
+                <td>090-252-989</td>
+                <td>bari</td>
+                <td>bosaso</td>
+                <td>laanta hawada</td>
+                <td>C+</td>
+                <td>accepted</td>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <td>cabiir</td>
+                <td>cabiir@gmail.com</td>
+                <td>090-252-989</td>
+                <td>mudug</td>
+                <td>galkacyo</td>
+                <td>bacadwayn</td>
+                <td>B+</td>
+                <td>rejected</td>
+              </tr>
+
+              <tr>
+             <th scope="row">5</th>
+             <td>jaabir</td>
+             <td>jaabir@gmail.com</td>
+             <td>090-456</td>
+             <td>Bari</td>
+             <td>Bossaso</td>
+             <td>gooba</td>
+             <td>B+</td>
+             <td>waiting</td>
+             </tr>
+            </tbody>
+          </table>
+
+
+
+
+
+
+
+     </div>
+</div>
+
+
+
+   
+</body>
+
+</html>
